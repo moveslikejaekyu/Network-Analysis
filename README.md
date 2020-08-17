@@ -115,6 +115,7 @@ By checking the number of departments in each community, we explored what is com
 
 ![noname08.png](깃헙이미지/noname08.png)</br>
 [Figure 8] Examples of departments and numbers belonging to each community</br>
+
 After checking the number of departments under the table, the results of the three-part class were derived in histogram. 
 What is certain about each community is that it was named after specific departments and colleges, and the newly determined community of unfamiliar combinations of departments was named "convergence".
 
@@ -122,12 +123,13 @@ What is certain about each community is that it was named after specific departm
 ![noname09.png](깃헙이미지/noname09.png)</br>
 ![noname10.png](깃헙이미지/noname10.png)</br>
 ![noname11.png](깃헙이미지/noname11.png)</br>
+![noname18.png](깃헙이미지/noname12.png)</br>
 
 
 [Figure 9] Histogram of the results of the in-depth analysis by community </br>
 A total of four convergence communities were determined and the convergence (2) communities were analyzed in detail.
 
-![noname12.png](깃헙이미지/noname12.png)</br>
+![noname12.png](깃헙이미지/noname13.png)</br>
 
 [Figure 10] Convergence(2) Community information
 The convergence2 community had 260 nodes, or 518% of the 5,024 nodes. Among them, clothing, environmental studies, media promotion and video studies, and daily design majors accounted for most of them. 
@@ -137,14 +139,14 @@ We drew out how classes in each department were connected and which classes were
 This was done after the reconstruction of rows and columns consisting only of the classes in the Cabinet from the initially derived network matrix.
 
 
-![noname13.png](깃헙이미지/noname13.png)</br>
+![noname13.png](깃헙이미지/noname14.png)</br>
 [Figure 11] Connectivity between the Department of Media Promotion and Film and the Department of Clothing and Environmental Studies </br>
-![noname14.png](깃헙이미지/noname14.png)</br>
+![noname14.png](깃헙이미지/noname15.png)</br>
 [Figure 12] Classes with a high connection between the Department of Media Promotion and Film and the Department of Clothing and Environmental Studies.</br>
 Ten classes with the highest degree of connection between the Department of Media Promotion and Film and the Department of Clothing and Environmental Studies have been selected. 
 There is a media introduction, interpersonal relations and communication. 
 
-![noname15.png](깃헙이미지/noname15.png)</br>
+![noname16.png](깃헙이미지/noname16.png)</br>
 [Figure 13] Classes with a high connection between the Department of Media Promotion and Visualization and the major of Life Design. </br>
 
 I have selected 10 classes with the highest degree of connection among the linked classes in the Department of Media Promotion and Film and the Department of Life Design. 
