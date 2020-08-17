@@ -32,8 +32,6 @@ This database is established using 'YSCEC' data, a learning management system th
 The 'YSCEC' data used in this study is intended for the entire 'YSCEC' data for 2016 and 2017.Usage data was generated from approximately 118 million data by database, 426 tables (classes), 1429 Object Properties indicating connectivity between tables, 3426 Data Properties representing column relationships belonging to the table, and about 1 billion RDF-type Triple.
  </br>
 
-
-
 # Development of a Group Discovery Model using Network Analysis and Connection Relationship and Convergence Studies among Classes
   </br>
 
@@ -155,7 +153,9 @@ What is certain about each community is that it was named after specific departm
 ![noname11.png](깃헙이미지/noname11.png)</br>
 ![noname18.png](깃헙이미지/noname12.png)</br>
 
-[Figure 9] Histogram of the results of the in-depth analysis by community </br>
+
+### Results </br>
+[Figure 9] Histogram of the results of the in-depth analysis by community. </br>
 A total of four convergence communities were determined and the convergence (2) communities were analyzed in detail. </br>
 
 
@@ -169,8 +169,6 @@ In what way did these three departments become integrated? Based on the Departme
 We drew out how classes in each department were connected and which classes were most connected. 
 This was done after the reconstruction of rows and columns consisting only of the classes in the Cabinet from the initially derived network matrix.
  </br>
-
-### Results </br>
 
 
 ![noname13.png](깃헙이미지/noname14.png)</br>
