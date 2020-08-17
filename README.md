@@ -35,6 +35,9 @@ The 'YSCEC' data used in this study is intended for the entire 'YSCEC' data for 
 # Development of a Group Discovery Model using Network Analysis and Connection Relationship and Convergence Studies among Classes
   </br>
 
+### FLow Chart </br>
+![noname21.png](깃헙이미지/noname17.jpg)</br>
+
 ### Introduction </br>
 
 Network analysis is a method of quantitatively analyzing the structure or diffusion process of individuals and groups by modelling them into nodes and links. 
