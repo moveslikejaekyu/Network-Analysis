@@ -36,7 +36,7 @@ The 'YSCEC' data used in this study is intended for the entire 'YSCEC' data for 
   </br>
 
 ### FLow Chart </br>
-![noname21.png](깃헙이미지/noname17.jpg)</br>
+![noname21.png](깃헙이미지/noname17.JPG)</br>
 
 ### Introduction </br>
 
