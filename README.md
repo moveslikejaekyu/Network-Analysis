@@ -51,7 +51,7 @@ Following these attempts, I thought that I could cluster data that can be extrac
 이번 연구에 있어서 이러한 네트워크(망) 형태의 데이터들을 발견할 수 있었다. 대게 큰틀에서 이런 구조를 발견할 수 있었다. 처음으로 발견한 것은 YSCEC데이터를 정리한 자체 구축 DB에서 테이블간의 네트워크이다. 이 테이블간의 네트워크를 커뮤니티 디텍션을 통해 우리는 테이블들이 비슷한 속성끼리 묶인 군집을 볼 수 있었다. DB를 세부적으로 살펴볼 때 참고할 수 있는 테이블별 카테고리, 군집을 알 수 있었다. 이런 시도에 이어 DB에서 추출할 수 있는 데이터들에서도 네트워크 분석을 하여 군집화를 해볼 수 있다는 생각을 했다. [그림1]은 이를 시각화하고 표로 정리한 것이다.
 
 
-![noname01.png](깃헙이미지/noname01.png)
+![noname01.png](깃헙이미지/noname01.png)</br>
 [그림1] DB 테이블들의 네트워크 그래프(Community Detection 통한 군집화)
 
 
@@ -64,7 +64,7 @@ Figure 2 shows the Excel sheet used to explore these tables. It went through a p
 
 
 
-![noname02.png](noname02.png)
+![noname02.png](깃헙이미지/noname02.png)</br>
 [그림2] DB 테이블들의 이름, 행(데이터)개수, 그리고 설명을 정리한 엑셀시트
 
 The tables that exist in common for all lectures did not really exist. 
@@ -75,10 +75,10 @@ Using this method, we were able to make a list of courses for each student, and 
 Based on this, we started to study the subject of 'Connection Relationship Between Classes Using Network Analysis and Development of Convergence Studies and Group Discovery Model'.
 모든 강의에 대해 공통적으로 존재하는 테이블은 사실 존재하지 않았다. YSCEC을 열렬히 이용하는 강의들도 있지만 아예 사용조차 하지않는 강의들도 있기 때문이다. 허나 강의에 대한 기본적인 정보와 수강하는 학생들에 관한 정보는 입력된 후 각 강의별 YSCEC이 개설되는 점에서 강의정보와 학생들정보를 담는 테이블이 있는지 조회했다. 거의 모든 강의에 대해 강의정보 테이블과 수강한 학생들의 일련번호가 저장된 테이블이 존재했다. 이를 이용해 학생별 수강과목들 목록을 만들 수 있었고 이를 통해 과목별 연결관계를 도출하여 과목끼리의 관계를 네트워크 형식으로 도출 및 각종 분석을 할 수 있을 것이라 생각했다. 이에 기반해 ‘네트워크 분석을 이용한 수업간의 연결관계 및 융합학과 집단 발견모델 개발’ 주제의 연구를 시작하게 되었다.
 
-![Deep learning](certificate_deep_learning.png)
+![noname03.png](깃헙이미지/noname03.png)</br>
 [그림28] M_HAKSA_CLASS_STUDENT 테이블 - 강의이름과 수강한 학생의 일련번호 저장
 
-![Deep learning](certificate_deep_learning.png)
+![noname04.png](깃헙이미지/noname04.png)</br>
 [그림29] 학생별 수강과목 목록을 list형식으로 저장한 txt파일 
 
 [3.2] Experiments
@@ -93,7 +93,7 @@ Through this calculated Matrix, i decided to identify the connections and streng
 M_HAKSA_CLASS_STUDENT 테이블을 통해 도출한 학생별 수강과목들 목록을 이용해서과목별 공통된 수강학생들의 수를 계산하고 이를 링크(edge) weight로 사용하고, 과목들을 노드로 하는 네트워크를 만들고자 network matrix를 도출했다. 강의를 행과 열로 하는 matrix이며 이를 위해 학생별로 강의-강의 동시 수강 횟수를 python을 이용해 계산하여 기입했다. 예를 들면 학 학생이 
 ['현대사회와심리학', '지구촌시대의문화인류학', '컴퓨터그래픽디자인', '재료분석론']의 수강목록을 가질 때, '현대사회와심리학'행과 '지구촌시대의문화인류학'열에 +1이 되게 계산했다. 즉 각 값은 두 개의 수업을 전체 수강내역중 동시에 수강한 학생들의 수이다. 전체 수업의 개수가 약 2만개이기 때문에 약 2만 x 2만 Matrix 산출이 되었다. 이렇게 산출된 Matrix를 통해 과목들간의 연결관계 및 연결강도를 파악하기로 했으며 선행연구의 Subgrouping 방법 중 Community Detection을 이용해보기로 했다. 
 
-![Deep learning](certificate_deep_learning.png) 
+![noname05.png](깃헙이미지/noname05.png)</br>
 [그림30] 2만 x 2만 Matrix의 일부
 
 However, the disadvantage is that the size of the data is too large at 20,000 x 20,000 matrix, resulting in longer analysis and computing times. 
@@ -109,7 +109,7 @@ When the Resolution coefficient was 0.5, the Modularity value was the largest wi
  한 분석으로 Community Detection을 실시했다. Resolution 계수 조정을 통해 detection 실시했는데 이때 Resolution 계수 0.3,0.5,0.7,1 등등 다양하게 실시하였고 각각에서 더출된 Modularity 값을 비교했다. Resolution 계수가 0.5일 때 Modularity 값이 0.573으로 가장 크기에 이 Resolution 계수값을 이용한 것이 최적의 네트워크 그래프라 판단했다.
 
 
-![Deep learning](certificate_deep_learning.png)
+![noname06.png](깃헙이미지/noname06.png)</br>
 [그림31] 연세대학교 수업 네트워크 커뮤니티 
 
 The above picture is 'Yonsei Uni's Class Network Community Graph'. 
@@ -122,7 +122,7 @@ This work also used the M_COURSE_CATEGORY table to find out which departments be
 위 그림은 ‘연세대학교 수업 네트워크 커뮤니티 그래프’이다. 같은 커뮤니티로 묶여진 노드끼리 같은 색깔로 표기되었다. 커뮤니티 개수는 27개이며 graph density는 0.08이다. 이 네트워크를 이용해 세부분석을 실시했다.
 우선 각 커뮤니티별 할당된 수업리스트들을 확인했다. 커뮤니티별로 할당된 수업들이 어떤 것들인지, 공통된 점들이 무엇인지를 확인해볼 필요가 있었다. 수업들의 이름만으로는 공통점을 확인하기가 어렵기에 수업들의 소속학과를 추가적으로 라벨링했다. 이 작업 또한 M_COURSE_CATEGORY 테이블을 이용하여 수업마다 소속된 학과를 알아낼 수 있었다.
 
-![Deep learning](certificate_deep_learning.png)
+![noname07.png](깃헙이미지/noname07.png)</br>
 [그림32] 강의의 소속학과 라멜링 예시
 
 After labelling departments in each class, detailed analyses were now conducted for each community. 
@@ -130,7 +130,7 @@ By checking the number of departments in each community, we explored what is com
 수업별 소속학과 라벨링 후 이제 각 커뮤니티마다 세부적인 분석을 실시했다. 커뮤니티마다 소속학과 수를 확인해봄으로 커뮤니티의 공통된 점이 무엇인지를 탐색했다. 
      
 
-![Deep learning](certificate_deep_learning.png)
+![noname08.png](깃헙이미지/noname08.png)</br>
 [그림33] 각 커뮤니티의 소속학과 수 예시
 After checking the number of departments under the table, the results of the three-part class were derived in histogram. 
 What is certain about each community is that it was named after specific departments and colleges, and the newly determined community of unfamiliar combinations of departments was named "convergence".
@@ -138,12 +138,16 @@ What is certain about each community is that it was named after specific departm
 
 
 
-![Deep learning](certificate_deep_learning.png)
+![noname09.png](깃헙이미지/noname09.png)</br>
+![noname10.png](깃헙이미지/noname10.png)</br>
+![noname11.png](깃헙이미지/noname11.png)</br>
+
+
 [그림34] 각 커뮤니티별 세부분석 결과 히스토그램
 A total of four convergence communities were determined and the convergence (2) communities were analyzed in detail.
 총 4개의 융합 커뮤니티가 있다 판단했고 그 중 융합(2) 커뮤니티를 세부적으로 분석해보았다.
 
-![Deep learning](certificate_deep_learning.png)
+![noname12.png](깃헙이미지/noname12.png)</br>
 
 [그림35] 융합(2) 커뮤니티 정보
 The convergence2 community had 260 nodes, or 518% of the 5,024 nodes. Among them, clothing, environmental studies, media promotion and video studies, and daily design majors accounted for most of them. 
@@ -153,18 +157,18 @@ We drew out how classes in each department were connected and which classes were
 This was done after the reconstruction of rows and columns consisting only of the classes in the Cabinet from the initially derived network matrix.
  융합2 커뮤니티는 5024개의 노드중 5,18%인 260개의 노드가 존재했다. 그 중 의류환경학, 언론홍보영상학, 생활디자인전공이 대부분을 차지했다. 생활과학대학, 사회과학대학으로 표기된 노드들 또한 수업조회를 해본 결과 모두 3개의 학과의 수업들이였다. 이 3개의 과는 어떤 점에서 융합되게 되었을까? 언론홍보영상학부(사회과학대학)을 기준으로 나머지 2개의 전공들을 비교했다. 각 과의 수업들이 어떤식으로 연결되어있는지, 어떤 수업이 가장 연결이 많았는지를 도출했다. 이는 처음에 도출한 network matrix에서 각과의 수업들로만 이루어진 행과 열로 재구성 후에 실시했다. 
 
-![Deep learning](certificate_deep_learning.png)
-
+![noname13.png](깃헙이미지/noname13.png)</br>
 [그림36] 언론홍보영상학부와 의류환경학의 수업 연결성
 
+![noname14.png](깃헙이미지/noname14.png)</br>
 [그림37] 언론홍보영상학부와 의류환경학의 높은 연결성을 가지는 수업
 Ten classes with the highest degree of connection between the Department of Media Promotion and Film and the Department of Clothing and Environmental Studies have been selected. 
 There is a media introduction, interpersonal relations and communication.
 언론홍보영상학부와 의류환경학의 연결된 수업들 중 가장 높은 연결도를 가진 수업들 10개를 추려냈다. 언록한개론, 대인관계와 커뮤니케이션 등이 있다.
 
-![Deep learning](certificate_deep_learning.png)
-
+![noname15.png](깃헙이미지/noname15.png)</br>
 [그림38] 언론홍보영상학부와 생활디자인전공의 높은 연결성을 가지는 수업
+
 I have selected 10 classes with the highest degree of connection among the linked classes in the Department of Media Promotion and Film and the Department of Life Design. 
 There is an unpublished introduction, communication design workshop, etc.
 In fact, as a result of consulting with a professor of journalism and video, he said that students in the department of media promotion and video studies take classes in daily design to take computer classes related to video production or design, which are not open on confectionery. 
