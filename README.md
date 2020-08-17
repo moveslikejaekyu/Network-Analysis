@@ -34,10 +34,10 @@ The 'YSCEC' data used in this study is intended for the entire 'YSCEC' data for 
 
 
 
-[3] Development of a Group Discovery Model using Network Analysis and Connection Relationship and Convergence Studies among Classes
+### Development of a Group Discovery Model using Network Analysis and Connection Relationship and Convergence Studies among Classes
   </br>
 
-[3.1] Introduction </br>
+### Introduction </br>
 
 Network analysis is a method of quantitatively analyzing the structure or diffusion process of individuals and groups by modelling them into nodes and links. 
 This has recently drawn much attention in the fields of social science, including sociology, economics, and business administration, as well as natural sciences such as physics, medicine and biology. 
@@ -89,7 +89,7 @@ Based on this, we started to study the subject of 'Connection Relationship Betwe
 [Figure 4] txt file that saves list of courses by student in list format</br>
  </br>
 
-[3.2] Experiments </br>
+### Experiments </br>
 
 Using the list of student-specific courses derived from the "M_HAKSA_CLASS_STUDENT" table, the network matrix was derived to calculate the number of common students in each subject, use it as a link weight, and create a network of subjects as nodes. 
 This is a matrix of rows and columns of lectures, and for this purpose, the number of concurrent lecture-course classes for each student was calculated using python. 
@@ -154,8 +154,6 @@ What is certain about each community is that it was named after specific departm
 ![noname10.png](깃헙이미지/noname10.png)</br>
 ![noname11.png](깃헙이미지/noname11.png)</br>
 ![noname18.png](깃헙이미지/noname12.png)</br>
- </br>
-
 
 [Figure 9] Histogram of the results of the in-depth analysis by community </br>
 A total of four convergence communities were determined and the convergence (2) communities were analyzed in detail. </br>
