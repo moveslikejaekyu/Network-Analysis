@@ -51,7 +51,7 @@ Therefore, this network analysis can serve as an important methodology for under
 These network-type data were found in this study. 
 Usually, this structure could be found in a large frame. 
 The first discovery was a network between tables in a self-built DB that organized YSCEC data. 
-Through the network between these tables, we were able to see clusters of tables tied together with similar attributes through community detections. 
+Through the network between these tables, i was able to see clusters of tables tied together with similar attributes through community detections. 
 When I looked at the DB in detail, I could see the categories and clusters by table that I could refer to. 
 Following these attempts, I thought that I could cluster data that can be extracted from DB through network analysis. 
 [Figure 1] is visualized and tabulated. </br>
@@ -76,10 +76,10 @@ Figure 2 shows the Excel sheet used to explore these tables. It went through a p
 
 The tables that exist in common for all lectures did not really exist. 
 Some lectures are enthusiastically used by YSCEC, but others are not even used at all. 
-However, the basic information about the lecture and the students taking the course were entered, and the YSCEC for each lecture was opened, so we looked up if there was a table containing the lecture information and student information. 
+However, the basic information about the lecture and the students taking the course were entered, and the YSCEC for each lecture was opened, so i looked up if there was a table containing the lecture information and student information. 
 There existed a lecture information table for almost all lectures and a table with the serial numbers of the students who took the course. 
-Using this method, we were able to make a list of courses for each student, and through this, we thought that we could derive the connection relationship between subjects in a network format and analyze various kinds of subjects. 
-Based on this, we started to study the subject of 'Connection Relationship Between Classes Using Network Analysis and Development of Convergence Studies and Group Discovery Model'.
+Using this method, i was able to make a list of courses for each student, and through this, i thought that i could derive the connection relationship between subjects in a network format and analyze various kinds of subjects. 
+Based on this, i started to study the subject of 'Connection Relationship Between Classes Using Network Analysis and Development of Convergence Studies and Group Discovery Model'.
  </br>
 
 ![noname03.png](깃헙이미지/noname03.png)</br>
@@ -106,11 +106,11 @@ Through this calculated Matrix, i decided to identify the connections and streng
  </br>
 
 However, the disadvantage is that the size of the data is too large at 20,000 x 20,000 matrix, resulting in longer analysis and computing times. 
-Therefore, we rewritten Matrix, where only classes that fit the subject of analysis are lined up and worked hard. 
+Therefore, i rewritten Matrix, where only classes that fit the subject of analysis are lined up and worked hard. 
 Classes were limited to Sinchon, undergraduate majors and optional liberal arts classes on future campuses, while classes on international campuses, graduate schools, compulsory liberal arts, affiliated foundations and seasonal semesters were excluded. 
 Sinchon, the task of summarizing only undergraduate majors and elective liberal arts classes on future campuses was sorted out and sorted out the departments and majors belonging to each class using the M_COURSE_CATEGORY table. A total of 5024 subjects were reconstructed, approximately 1/4 of the nodes and significantly reduced analysis and calculation time. </br>
 
-Network graphs are generated using Python module NetwrockX and Gephi, a visualization and analysis tool. We used NetwrockX to create additional graph weighting and gxef file, and we used it to do various visualizations and analyses using Gephi.
+Network graphs are generated using Python module NetwrockX and Gephi, a visualization and analysis tool. I used NetwrockX to create additional graph weighting and gxef file, and i used it to do various visualizations and analyses using Gephi.
 Community Detection was performed with one analysis. Detection was performed through the adjustment of the Resolution coefficient. The Resolution coefficient was 0.3,0.5,0.7,1 and so on, and the Modularity values added from each were compared. 
 When the Resolution coefficient was 0.5, the Modularity value was the largest with 0.573, and this Resolution coefficient was used to determine the optimal network graph.
  </br>
@@ -123,7 +123,7 @@ When the Resolution coefficient was 0.5, the Modularity value was the largest wi
 
 The above picture is 'Yonsei Uni's Class Network Community Graph'. 
 Nodes bound together in the same community were marked in the same color. The number of communities is 27 and the graph density is 0.08. 
-We used this network and started in-dept analysis
+I used this network and started in-dept analysis
  </br>
 
 First, I checked the assigned class list for each community. It was necessary to see what the classes assigned to each community were and what the commonalities were. 
@@ -138,7 +138,7 @@ This work also used the M_COURSE_CATEGORY table to find out which departments be
 
 
 After labelling departments in each class, detailed analyses were now conducted for each community. 
-By checking the number of departments in each community, we explored what is common in the community.  </br>
+By checking the number of departments in each community, i explored what is common in the community.  </br>
 
 
 
@@ -169,7 +169,7 @@ A total of four convergence communities were determined and the convergence (2) 
 The convergence2 community had 260 nodes, or 518% of the 5,024 nodes. Among them, clothing, environmental studies, media promotion and video studies, and daily design majors accounted for most of them. 
 Nodes marked as College of Living Science and College of Social Sciences were also all three departments after class inquiry. 
 In what way did these three departments become integrated? Based on the Department of Media Promotion and Film Studies (Sociological Science College), the two remaining majors were compared. 
-We drew out how classes in each department were connected and which classes were most connected. 
+I drew out how classes in each department were connected and which classes were most connected. 
 This was done after the reconstruction of rows and columns consisting only of the classes in the Cabinet from the initially derived network matrix.
  </br>
 
@@ -194,7 +194,7 @@ I have selected 10 classes with the highest degree of connection among the linke
 There is an unpublished introduction, communication design workshop, etc.
 In fact, as a result of consulting with a professor of journalism and video, he said that students in the department of media promotion and video studies take classes in daily design to take computer classes related to video production or design, which are not open on confectionery. 
 In comparison to this advice, it can be seen that the need for a convergence of two departments exists in students. Through this result, it is possible to propose the opening of a convergence department or a convergence class group.
-For future analysis, we will try to find convergent needs by removing the connection diagram between oligarchs, creating an ego-network for each unit, and then trying several more.
+For future analysis, i will try to find convergent needs by removing the connection diagram between oligarchs, creating an ego-network for each unit, and then trying several more.
 
 
 
