@@ -51,7 +51,7 @@ Following these attempts, I thought that I could cluster data that can be extrac
 이번 연구에 있어서 이러한 네트워크(망) 형태의 데이터들을 발견할 수 있었다. 대게 큰틀에서 이런 구조를 발견할 수 있었다. 처음으로 발견한 것은 YSCEC데이터를 정리한 자체 구축 DB에서 테이블간의 네트워크이다. 이 테이블간의 네트워크를 커뮤니티 디텍션을 통해 우리는 테이블들이 비슷한 속성끼리 묶인 군집을 볼 수 있었다. DB를 세부적으로 살펴볼 때 참고할 수 있는 테이블별 카테고리, 군집을 알 수 있었다. 이런 시도에 이어 DB에서 추출할 수 있는 데이터들에서도 네트워크 분석을 하여 군집화를 해볼 수 있다는 생각을 했다. [그림1]은 이를 시각화하고 표로 정리한 것이다.
 
 
-![noname01.png](noname01.png)
+![noname01.png](깃헙이미지/noname01.png)
 [그림1] DB 테이블들의 네트워크 그래프(Community Detection 통한 군집화)
 
 
