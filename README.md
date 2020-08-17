@@ -152,12 +152,12 @@ What is certain about each community is that it was named after specific departm
 ![noname10.png](깃헙이미지/noname10.png)</br>
 ![noname11.png](깃헙이미지/noname11.png)</br>
 ![noname18.png](깃헙이미지/noname12.png)</br>
+[Figure 9] Histogram of the results of the in-depth analysis by community. </br>
 
 
 ### Results </br>
-[Figure 9] Histogram of the results of the in-depth analysis by community. </br>
-A total of four convergence communities were determined and the convergence (2) communities were analyzed in detail. </br>
 
+A total of four convergence communities were determined and the convergence (2) communities were analyzed in detail. </br>
 
 ![noname12.png](깃헙이미지/noname13.png)</br>
 [Figure 10] Convergence(2) Community information </br>
