@@ -31,6 +31,7 @@ The edu - data : i made this from YONSEI EDUCATIONAL DATABASE, used many interes
 This database is established using 'YSCEC' data, a learning management system that supports online and offline integrated education of Yonsei University. 
 The 'YSCEC' data used in this study is intended for the entire 'YSCEC' data for 2016 and 2017.Usage data was generated from approximately 118 million data by database, 426 tables (classes), 1429 Object Properties indicating connectivity between tables, 3426 Data Properties representing column relationships belonging to the table, and about 1 billion RDF-type Triple.
  </br>
+ </br>
 
 # Development of a Group Discovery Model using Network Analysis and Connection Relationship and Convergence Studies among Classes
   </br>
