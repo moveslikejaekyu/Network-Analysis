@@ -34,7 +34,7 @@ The 'YSCEC' data used in this study is intended for the entire 'YSCEC' data for 
 
 
 
-### Development of a Group Discovery Model using Network Analysis and Connection Relationship and Convergence Studies among Classes
+# Development of a Group Discovery Model using Network Analysis and Connection Relationship and Convergence Studies among Classes
   </br>
 
 ### Introduction </br>
@@ -169,6 +169,8 @@ In what way did these three departments become integrated? Based on the Departme
 We drew out how classes in each department were connected and which classes were most connected. 
 This was done after the reconstruction of rows and columns consisting only of the classes in the Cabinet from the initially derived network matrix.
  </br>
+
+### Results </br>
 
 
 ![noname13.png](깃헙이미지/noname14.png)</br>
